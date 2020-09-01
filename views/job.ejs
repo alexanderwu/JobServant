@@ -1,0 +1,24 @@
+<style>
+  .job__title {
+    color: black;
+  }
+  .job__company {
+    color: grey;
+  }
+  .job__bullet::before {
+    content: "\00b7";
+  }
+
+</style>
+
+<div class="main-content">
+  <br>
+  <a class="link" href="javascript: history.back()">Back</a>
+
+  <a href="<%= job.url %>" class="link"><h2 class="job__title"><%= job.title %></h2></a>
+  <div class="job__company-info">
+    <span><%= job.company %></span>
+    <span class="job__bullet"> <%= job.location %></span>
+  </div>
+  <pre><%- job.text %></pre>
+</div>

@@ -1,0 +1,67 @@
+:root {
+    --amethyst: #856c8b;
+    --slate: #a4c5c6;
+    --mint: #d4ebd0;
+    --sand: #ffeb99;
+    --gameday1: #455A64;
+    --gameday2: #607D8B;
+    --link: #1C3AA9;
+    --gray1: #333333;
+    --gray2: #4F4F4F;
+    --gray3: #828282;
+    --gray4: #BDBDBD;
+    --gray5: #E0E0E0;
+    --gray6: #F2F2F2;
+}
+
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+input[type=text] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+pre {
+    white-space: pre-wrap;
+    background: white;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: var(--gameday2);
+    text-decoration: none;
+}
+.link:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.main-content {
+    flex-grow: 1;
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+}

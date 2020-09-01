@@ -1,0 +1,73 @@
+<style>
+  a.btn {
+    display: inline-block;
+    padding: 10px;
+    color: grey;
+  }
+  a.btn:hover {
+    color: white;
+    background-color: var(--slate);
+  }
+  a.disabled {
+    visibility: hidden;
+  }
+
+  .row {
+    display: flex;
+    color: black;
+    background-color: white;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .company_img {
+    display: block;
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+    padding: 2px;
+  }
+  .company_info {
+    padding-left: 10px;
+    flex-grow: 1;
+  }
+
+  .subtitle {
+    color: grey;
+    font-size: 12px;
+    margin: 0;
+  }
+
+</style>
+
+<div class="main-content">
+  <h1>Jobs</h1>
+  <form style="display: inline-block;" action="/jobs/search" method="get">
+    <input type="text" name="keywords" value="<%= locals.keywords ? keywords : ''%>" placeholder="Search" autocomplete="off">
+    <!-- <button type="submit">🔍</button> -->
+  </form>
+  <% if (locals.previous) { %>
+    <a href="<%= previous %>" class="btn">&laquo;</a>
+  <% } else { %>
+    <a class="btn disabled">&laquo;</a>
+  <% } %>
+  <span style="color: grey;"><%= startIndex + 1 %>-<%= Math.min(endIndex, totalJobs) %> of <%= totalJobs %></span>
+  <% if (locals.next) { %>
+    <a href="<%= next %>" class="btn">&raquo;</a>
+  <% } else { %>
+    <a class="btn disabled">&raquo;</a>
+  <% } %>
+  <% jobs.forEach((job) => { %>
+    <a href="/jobs/<%= job._id %>">
+      <div class="row">
+        <img class="company_img" src="<%= job.image_url || '/images/company_logo.PNG' %>" alt="Company Logo">
+        <div class="company_info">
+          <strong><%= job.title.slice(0, 100) + (job.title.length > 100 ? "..." : "") %></strong>
+          <p class="subtitle"><%= job.company.slice(0, 100) + (job.company.length > 100 ? "..." : "") %></p>
+          <p class="subtitle"><%= job.location %></p>
+        </div>
+      </div>
+    </a>
+  <% }) %>
+</div>
