@@ -5,7 +5,7 @@ require('./db/mongoose');
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
+app.use(express.json());
 app.use(jobRouter);
 app.set('view engine', 'ejs');
 app.use(express.static('public'));

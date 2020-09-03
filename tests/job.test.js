@@ -1,38 +1,25 @@
-const request = require("supertest");
-const mongoose = require("mongoose");
-const app = require("../src/app");
-const Job = require("../src/models/job");
+const request = require('supertest');
+const app = require('../src/app');
+const Job = require('../src/models/job');
+const {
+  jobTwo, setupDatabase, teardownDatabase,
+} = require('./fixtures/db');
 
-const jobOne = {
-    title: "11Software Engineer",
-    location: "Fremont, CA",
-    company: "PDDN",
-    url: "https://www.linkedin.com/jobs/view/11software-engineer-at-pddn-1928329197",
-    ago: "2 months ago",
-    applicants: "Be among the first 25 applicants",
-    text: "Test text"
-};
+/* global beforeEach, afterAll, test, expect */
+/* eslint no-undef: "error" */
+beforeEach(setupDatabase);
 
-beforeAll(async () => {
-    await Job.deleteMany();
-});
+afterAll(teardownDatabase);
 
-afterAll(async () => {
-    await mongoose.connection.close();
+test('Should return jobs', async () => {
+  await request(app).get('/jobs').expect(200);
 });
 
 test('Should create new job posting', async () => {
-    const response = await request(app)
-        .post("/jobs")
-        .send(jobOne)
-    expect(response.statusCode).toBe(201)
-})
-
-test('Should run python code', () => {
-    const { spawn } = require("child_process");
-    const pyProg = spawn("python", ["./hello.py"]);
-
-    pyProg.stdout.on("data", function (data) {
-        expect(data.toString()).toBe('Hello')
-    });
-})
+  const response = await request(app)
+    .post('/jobs')
+    .send(jobTwo)
+    .expect(201);
+  const job = await Job.findById(response.body._id);
+  expect(job).not.toBeNull();
+});

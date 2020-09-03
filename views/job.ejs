@@ -1,15 +1,61 @@
 <style>
   .job__title {
-    color: black;
+      color: black;
   }
   .job__company {
-    color: grey;
+      color: grey;
   }
   .job__bullet::before {
-    content: "\00b7";
+      content: "\00b7";
   }
 
+  .skill {
+      background-color: orange;
+      padding: 5px;
+      border: 1px solid #333;
+      border-radius: 5px;
+  }
+  .skill::after {
+      content: " SKILL";
+      color: gray;
+      font-size: 10px;
+  }
+
+  .term {
+      background-color: skyblue;
+      padding: 5px;
+      border: 1px solid #333;
+      border-radius: 5px;
+  }
+  .term::after {
+      content: " TERM";
+      color: gray;
+      font-size: 10px;
+  }
+
+  .exp {
+      background-color: lightgreen;
+      padding: 5px;
+      border: 1px solid #333;
+      border-radius: 5px;
+  }
+  .exp::after {
+      content: " EXP";
+      color: gray;
+      font-size: 10px;
+  }
 </style>
+
+<%
+let text = job.text
+patterns.forEach((line) => {
+    const { label, pattern } = line;
+    const regex = new RegExp(String.raw`([ ,/(\n])\b(${pattern})\b`, 'gi');
+    text = text.replace(regex, `$1<span class="${label.toLowerCase()}">$2</span>`);
+});
+const c_regex = new RegExp(String.raw`([ ,/(])\b(C\+\+|C\b)`, 'gi');
+text = text.replace(c_regex, `$1<span class="skill">$2</span>`);
+%>
 
 <div class="main-content">
   <br>
@@ -20,5 +66,5 @@
     <span><%= job.company %></span>
     <span class="job__bullet"> <%= job.location %></span>
   </div>
-  <pre><%- job.text %></pre>
+  <pre><%- text %></pre>
 </div>

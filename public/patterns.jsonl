@@ -1,0 +1,165 @@
+{"label": "SKILL", "pattern": "r"}
+{"label": "SKILL", "pattern": "agile"}
+{"label": "SKILL", "pattern": "react"}
+{"label": "SKILL", "pattern": "jupyter"}
+{"label": "SKILL", "pattern": "spark(?:sql)?"}
+{"label": "SKILL", "pattern": "scrum"}
+{"label": "SKILL", "pattern": "python"}
+{"label": "SKILL", "pattern": "ruby"}
+{"label": "SKILL", "pattern": "sql"}
+{"label": "SKILL", "pattern": "aws"}
+{"label": "SKILL", "pattern": "azure"}
+{"label": "SKILL", "pattern": "gcp"}
+{"label": "SKILL", "pattern": "git"}
+{"label": "SKILL", "pattern": "github"}
+{"label": "SKILL", "pattern": "openstack"}
+{"label": "SKILL", "pattern": "hadoop"}
+{"label": "SKILL", "pattern": "redshift"}
+{"label": "SKILL", "pattern": "hbase"}
+{"label": "SKILL", "pattern": "hive"}
+{"label": "SKILL", "pattern": "java"}
+{"label": "SKILL", "pattern": "javascript"}
+{"label": "SKILL", "pattern": "html"}
+{"label": "SKILL", "pattern": "css"}
+{"label": "SKILL", "pattern": "scala"}
+{"label": "SKILL", "pattern": "autogrid"}
+{"label": "SKILL", "pattern": "tableau"}
+{"label": "SKILL", "pattern": "sas"}
+{"label": "SKILL", "pattern": "stata"}
+{"label": "SKILL", "pattern": "spss"}
+{"label": "SKILL", "pattern": "matlab"}
+{"label": "SKILL", "pattern": "tensorflow"}
+{"label": "SKILL", "pattern": "caffe2?"}
+{"label": "SKILL", "pattern": "onnx"}
+{"label": "SKILL", "pattern": "linux"}
+{"label": "SKILL", "pattern": "oracle"}
+{"label": "SKILL", "pattern": "mysql"}
+{"label": "SKILL", "pattern": "postgres(?:ql)?"}
+{"label": "SKILL", "pattern": "apache"}
+{"label": "SKILL", "pattern": "kafka"}
+{"label": "SKILL", "pattern": "keras"}
+{"label": "SKILL", "pattern": "sagemaker"}
+{"label": "SKILL", "pattern": "kubernetes"}
+{"label": "SKILL", "pattern": "airflow"}
+{"label": "SKILL", "pattern": "jenkins"}
+{"label": "SKILL", "pattern": "docker"}
+{"label": "SKILL", "pattern": "scikit-?(?: ?learn)?"}
+{"label": "SKILL", "pattern": "pandas"}
+{"label": "SKILL", "pattern": "matplotlib"}
+{"label": "SKILL", "pattern": "bokeh"}
+{"label": "SKILL", "pattern": "plotly"}
+{"label": "SKILL", "pattern": "superset"}
+{"label": "SKILL", "pattern": "flask"}
+{"label": "SKILL", "pattern": "streamlit"}
+{"label": "SKILL", "pattern": "jquery"}
+{"label": "SKILL", "pattern": "angular"}
+{"label": "SKILL", "pattern": "spacy"}
+{"label": "SKILL", "pattern": "nltk"}
+{"label": "SKILL", "pattern": "gensim"}
+{"label": "SKILL", "pattern": "textblob"}
+{"label": "SKILL", "pattern": "elasticsearch"}
+{"label": "SKILL", "pattern": "kibana"}
+{"label": "SKILL", "pattern": "elk"}
+{"label": "SKILL", "pattern": "mapreduce"}
+{"label": "SKILL", "pattern": "bash"}
+{"label": "SKILL", "pattern": "perl"}
+{"label": "SKILL", "pattern": "php"}
+{"label": "SKILL", "pattern": "pytorch"}
+{"label": "SKILL", "pattern": "torch"}
+{"label": "SKILL", "pattern": "theano"}
+{"label": "SKILL", "pattern": "caffe"}
+{"label": "SKILL", "pattern": "node"}
+{"label": "SKILL", "pattern": "django"}
+{"label": "SKILL", "pattern": "splunk"}
+{"label": "SKILL", "pattern": "nlp"}
+{"label": "SKILL", "pattern": "nlu"}
+{"label": "SKILL", "pattern": "a/b"}
+{"label": "TERM", "pattern": "reinforcement learning"}
+{"label": "TERM", "pattern": "recommender systems"}
+{"label": "TERM", "pattern": "anomaly detection"}
+{"label": "TERM", "pattern": "text(?: processing)?(?: mining)?"}
+{"label": "TERM", "pattern": "sentiment analysis"}
+{"label": "TERM", "pattern": "computer vision"}
+{"label": "TERM", "pattern": "image segmentation"}
+{"label": "TERM", "pattern": "object detection"}
+{"label": "TERM", "pattern": "recsys"}
+{"label": "TERM", "pattern": "natural language processing"}
+{"label": "TERM", "pattern": "natural language understanding"}
+{"label": "TERM", "pattern": "embedded"}
+{"label": "TERM", "pattern": "hpc"}
+{"label": "TERM", "pattern": "videos?(?: content)?(?: understanding)?"}
+{"label": "TERM", "pattern": "etl"}
+{"label": "TERM", "pattern": "etls"}
+{"label": "TERM", "pattern": "cloud"}
+{"label": "TERM", "pattern": "devops"}
+{"label": "TERM", "pattern": "saas"}
+{"label": "TERM", "pattern": "iaas"}
+{"label": "TERM", "pattern": "paas"}
+{"label": "TERM", "pattern": "marketing"}
+{"label": "TERM", "pattern": "hardware"}
+{"label": "TERM", "pattern": "firmware"}
+{"label": "TERM", "pattern": "hw"}
+{"label": "TERM", "pattern": "ml"}
+{"label": "TERM", "pattern": "ai"}
+{"label": "TERM", "pattern": "artificial intelligence"}
+{"label": "TERM", "pattern": "rest apis?"}
+{"label": "TERM", "pattern": "grpc"}
+{"label": "TERM", "pattern": "websockets"}
+{"label": "TERM", "pattern": "internet"}
+{"label": "TERM", "pattern": "production"}
+{"label": "TERM", "pattern": "productionize"}
+{"label": "TERM", "pattern": "risk management"}
+{"label": "TERM", "pattern": "healthcare"}
+{"label": "TERM", "pattern": "bioinformatics"}
+{"label": "TERM", "pattern": "gaming"}
+{"label": "TERM", "pattern": "gpu"}
+{"label": "TERM", "pattern": "fraud"}
+{"label": "TERM", "pattern": "anomaly detection"}
+{"label": "TERM", "pattern": "databases?"}
+{"label": "TERM", "pattern": "(?:cyber ?)-?security"}
+{"label": "TERM", "pattern": "mobile"}
+{"label": "TERM", "pattern": "supply chain"}
+{"label": "TERM", "pattern": "sustainable energy"}
+{"label": "TERM", "pattern": "quality assurance"}
+{"label": "TERM", "pattern": "product managemment"}
+{"label": "TERM", "pattern": "pm"}
+{"label": "TERM", "pattern": "automotive"}
+{"label": "TERM", "pattern": "manufacturing"}
+{"label": "TERM", "pattern": "finance"}
+{"label": "TERM", "pattern": "financial"}
+{"label": "TERM", "pattern": "networking"}
+{"label": "TERM", "pattern": "sales"}
+{"label": "TERM", "pattern": "retail"}
+{"label": "TERM", "pattern": "pricing"}
+{"label": "TERM", "pattern": "deep neural networks?"}
+{"label": "TERM", "pattern": "deep learning"}
+{"label": "TERM", "pattern": "machine learning"}
+{"label": "TERM", "pattern": "business analytics"}
+{"label": "TERM", "pattern": "data visualizations?"}
+{"label": "TERM", "pattern": "data analytics"}
+{"label": "TERM", "pattern": "data analyst"}
+{"label": "TERM", "pattern": "data engineering"}
+{"label": "TERM", "pattern": "data science"}
+{"label": "TERM", "pattern": "data scientist"}
+{"label": "TERM", "pattern": "(?:data )?pipelines?"}
+{"label": "TERM", "pattern": "dashboards?(?:ing)?"}
+{"label": "TERM", "pattern": "big data"}
+{"label": "TERM", "pattern": "continuous integration"}
+{"label": "TERM", "pattern": "ci"}
+{"label": "TERM", "pattern": "unit tests?"}
+{"label": "TERM", "pattern": "oop"}
+{"label": "TERM", "pattern": "web development"}
+{"label": "TERM", "pattern": "research(?:er)?"}
+{"label": "EXP", "pattern": "phd"}
+{"label": "EXP", "pattern": "bachelor'?s?(?: degree)?"}
+{"label": "EXP", "pattern": "bsc?"}
+{"label": "EXP", "pattern": "master'?s?(?: degree)?"}
+{"label": "EXP", "pattern": "msc?"}
+{"label": "EXP", "pattern": "graduate(?: degree)?"}
+{"label": "EXP", "pattern": "jr"}
+{"label": "EXP", "pattern": "junior"}
+{"label": "EXP", "pattern": "sr"}
+{"label": "EXP", "pattern": "senior"}
+{"label": "EXP", "pattern": "staff"}
+{"label": "EXP", "pattern": "associate"}
+{"label": "EXP", "pattern": "(?:\\d\\+? )?years?"}

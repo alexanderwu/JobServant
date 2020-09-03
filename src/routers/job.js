@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = new express.Router();
 const Job = require('../models/job');
+const patterns = require('../db/patterns');
 
 function paginatedResults(model) {
   return async (req, res, next) => {
@@ -61,19 +62,19 @@ function paginatedResults(model) {
   };
 }
 
-router.route('/jobs')
-  .get(paginatedResults(Job), async (req, res) => {
-    res.render('layout', { content: 'jobs', ...res.paginatedResults });
-  })
-  .post(async (req, res) => {
-    const job = new Job(req.body);
-    try {
-      await job.save();
-      res.status(201).send(job);
-    } catch (error) {
-      res.status(400).send(error);
-    }
-  });
+router.get('/jobs', paginatedResults(Job), async (req, res) => {
+  res.render('layout', { content: 'jobs', ...res.paginatedResults });
+});
+
+router.post('/jobs', async (req, res) => {
+  const job = new Job(req.body);
+  try {
+    await job.save();
+    res.status(201).send(job);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+});
 
 router.get('/jobs/search', paginatedResults(Job), async (req, res) => {
   res.render('layout', { content: 'jobs', ...res.paginatedResults });
@@ -85,7 +86,7 @@ router.get('/jobs/:id', async (req, res) => {
     if (!job) {
       return res.status(404).send();
     }
-    res.render('layout', { content: 'job', job });
+    res.render('layout', { content: 'job', job, patterns });
   } catch (error) {
     res.status(500).send(error);
   }

@@ -43,6 +43,7 @@ pre {
     border: 2px solid;
     border-radius: 5px;
     padding: 1rem;
+    line-height: 2;
 }
 
 a {
